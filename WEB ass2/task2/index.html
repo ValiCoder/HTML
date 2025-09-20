@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Task 3 - CSS Table and Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+  <div id="header">
+    <strong>THE GREATEST WEBSITE HUMANITY HAS EVER SEEN</strong>
+  </div>
+
+  <div id="navbar">
+    <a href="../index.html">Main</a>
+    <a href="index.html">Task 1</a>
+    <a href="../task2/index.html">Task 2</a>
+    <a href="../task3/index.html">Task 3</a>
+    <a href="../task4/index.html">Task 4</a>
+  </div>
+
+  <h1 id="page-title">Student Grades</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Alice</td>
+        <td>Math</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Physics</td>
+        <td>B+</td>
+      </tr>
+      <tr class="highlight-row">
+        <td>Bob</td>
+        <td>Math</td> 
+        <td>Excellent (A+)</td>
+      </tr>
+      <tr>
+        <td>Charlie</td>
+        <td>History</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>Max</td>
+        <td>Math</td>
+        <td>B+</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h2><div id = form_label> Feedback Form</div></h2>
+  <form id="feedback-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="role">Role:</label>
+    <select id="role" name="role">
+      <option value="student">Student</option>
+      <option value="teacher">Teacher</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label>Did you like this page?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="like" value="yes"> Yes</label>
+      <label><input type="radio" name="like" value="no"> No</label>
+    </div>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4"></textarea>
+
+    <button type="submit" class="btn-submit">Submit</button>
+  </form>
+</body>
+</html>

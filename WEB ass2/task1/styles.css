@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#navbar {
+  background: #fd8e20;
+  overflow: hidden;
+  text-align: center;
+  border-width: #0f0909 1px;
+  height: 30px;
+  line-height: 30px;
+}
+
+#navbar a {
+  float: center;
+  color: #4e2d0b;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background: #ffb770;
+}
+
+main {
+  background: #eee;
+  padding: 20px;
+  border-radius: 50 px;
+}
+
+.tesla-img {
+  width: 500px;
+  border-radius: 20px;
+  display: block;
+  margin-top: 20px;
+  align-content: center;
+}
+
+.btn {
+  display: inline-block;
+  background: #0077cc;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background: #005fa3;
+}
